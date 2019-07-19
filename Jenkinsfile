@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('ReleaseStart') {
       steps {
-        powershell(script: 'write-host "Test"', returnStatus: true, returnStdout: true)
+        powershell 'write-host "Release started"'
       }
     }
     stage('Release Completed') {
