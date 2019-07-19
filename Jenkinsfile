@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Release Completed') {
       steps {
-        powershell(script: 'write-host "Release Completed"', returnStatus: true, returnStdout: true)
+        powershell 'write-host "Release Completed"'
       }
     }
   }
