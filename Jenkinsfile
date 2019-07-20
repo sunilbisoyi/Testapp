@@ -1,14 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('ReleaseStart') {
+    stage('Stage1') {
       steps {
-        powershell 'write-host "Release started"'
+        powershell 'write-output "Stage1"'
       }
     }
-    stage('Release Completed') {
+    stage('stage2') {
       steps {
-        powershell 'write-host "Release Completed"'
+        powershell 'write-output "Stage2"'
       }
     }
   }
